@@ -1,0 +1,10 @@
+{
+    "id": "discordapp",
+    "name": "Discordapp",
+    "description": "Adds Discord channel(s) to HumHub`s sidebar.",
+    "keywords": ["discordapp","discord"],
+    "version": "0.0.3",
+    "humhub": {
+        "minVersion": "0.20"
+    }
+}
