@@ -1,8 +1,8 @@
 ![](https://github.com/Felli/humhub-discordapp-module/blob/dev/Discord-Logo%2BWordmark-Color.png)
 
-## Discord-App-Module
+## [HumHub](https://www.humhub.org/en) Discord Module
 
-Adds a panel on the Dashboard, with the Discord App Panel.
+Adds a sidebar widget to the Dashboard.
 
 __Authors:__ @Felli Sarah Tsumayoi, @WebCrew Andreas Holzer
 
