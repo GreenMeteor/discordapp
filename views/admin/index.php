@@ -7,7 +7,7 @@ use humhub\modules\discordapp\controllers\AdminController;
 <div class="panel panel-default">
 	<div class="panel-heading"><?=Yii::t('DiscordappModule.base', '<strong>Discordapp</strong>'); ?></div>
 	<div class="panel-body">
-		<?php $form = CActiveForm::begin(['id' => 'discordapp-settings-form']); ?>
+	<?php $form = CActiveForm::begin(['id' => 'discordapp-settings-form']); ?>
 			<?=$form->errorSummary($model); ?>
 			<p class="help-block"><?=Yii::t('DiscordappModule.base', 'eg:  "99999999"'); ?></p>
 			<div class="form-group">
@@ -17,6 +17,6 @@ use humhub\modules\discordapp\controllers\AdminController;
 			<p class="help-block"><?=Yii::t('DiscordappModule.base', 'Widget positioning.'); ?></p>
 			<?= CHtml::submitButton(Yii::t('DiscordappModule.base', 'save'), ['class' => 'btn btn-primary']); ?>
 			<?=\humhub\widgets\DataSaved::widget(); ?>
-		<?php CActiveForm::end(); ?>
+	<?php CActiveForm::end(); ?>
 	</div>
 </div>
