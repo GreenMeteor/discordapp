@@ -24,14 +24,14 @@ class AdminController extends \humhub\modules\admin\components\Controller
         if ($form->load(Yii::$app->request->post())) {
             if ($form->validate()) {
                 Setting::Set('sort', $form->sort, 'discordapp');
-
+                
                 Yii::$app->session->setFlash('data-saved', Yii::t('DiscordappModule.base', 'Saved'));
                 // $this->redirect(Url::toRoute('index'));
             }
         } else {
             $form->sort = Setting::Get('sort', 'discordapp');
         }
-
+        
         return $this->render('index', [
             'model' => $form
         ]);
