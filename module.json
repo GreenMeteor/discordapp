@@ -5,6 +5,6 @@
     "keywords": ["discordapp","discord"],
     "version": "0.0.3",
     "humhub": {
-        "minVersion": "1.0"
+    "minVersion": "1.0"
     }
 }
