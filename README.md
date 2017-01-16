@@ -1,4 +1,4 @@
-![](https://github.com/Felli/humhub-discordapp-module/blob/dev/Discord-Logo%2BWordmark-Color.png)
+![](https://github.com/Felli/humhub-discordapp-module/blob/master/Discord-Logo%2BWordmark-Color.png)
 
 ## [HumHub](https://www.humhub.org/en) Discord Module
 
