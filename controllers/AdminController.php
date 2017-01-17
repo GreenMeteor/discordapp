@@ -1,40 +1,27 @@
 <?php
+
 namespace humhub\modules\discordapp\controllers;
 
 use Yii;
-use humhub\models\Setting;
 use yii\helpers\Url;
+use humhub\modules\admin\components\Controller;
+use humhub\models\Setting;
+use humhub\modules\discordapp\models\EditForm;
 
-class AdminController extends \humhub\modules\admin\components\Controller
+class AdminController extends Controller
 {
-
-    public function behaviors()
-    {
-        return [
-            'acl' => [
-                'class' => \humhub\components\behaviors\AccessControl::className(),
-                'adminOnly' => true
-            ]
-        ];
-    }
-
+    /**
+     * Configuration Action for Super Admins
+     */
     public function actionIndex()
     {
-        $form = new \humhub\modules\discordapp\forms\SettingsForm();
-        if ($form->load(Yii::$app->request->post())) {
-            if ($form->validate()) {
-                Setting::Set('sort', $form->sort, 'discordapp');
-                
-                Yii::$app->session->setFlash('data-saved', Yii::t('DiscordappModule.base', 'Saved'));
-                // $this->redirect(Url::toRoute('index'));
-            }
-        } else {
-            $form->sort = Setting::Get('sort', 'discordapp');
+        $form = new EditForm();
+        if ($form->load(Yii::$app->request->post()) && $form->validate() && $form->save()) {
+            return $this->redirect(Url::to(['/discordapp/admin/index']));
         }
         
-        return $this->render('index', [
-            'model' => $form
-        ]);
+        return $this->render('index', ['model' => $form]);
     }
-
 }
+
+?>
