@@ -1,5 +1,6 @@
 <?php
 
+use Yii;
 use humhub\compat\Html;
 use humhub\compat\ActiveForm;
 use humhub\models\Setting;
