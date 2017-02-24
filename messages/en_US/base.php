@@ -1,6 +1,6 @@
 <?php
 return [
-    'Discordapp' => 'Discordapp',
+    'Discordapp' => 'Discord App',
     'sort' => 'Discord sort order',
     'save' => 'Save',
 ];
