@@ -4,6 +4,8 @@ use Yii;
 use yii\helpers\Url;
 use humhub\models\Setting;
 
+\humhub\modules\discordapp\Assets::register($this);
+
 ?>
 <div class="panel">
   <div class="panel-heading">
