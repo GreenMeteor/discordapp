@@ -17,7 +17,6 @@ use humhub\modules\discordapp\controllers\AdminController;
 			        <?php echo $form->labelEx($model, 'number'); ?>
 				<?php echo $form->textField($model, 'number', ['class' => 'form-control', 'readonly' => Setting::IsFixed('number', 'discordapp')]); ?>
 			</div>
-			<p class="help-block"><?[php echo Yii::t('DiscordappModule.base', 'Server ID.'); ?></p>
 			<?php echo Html::submitButton(Yii::t('DiscordappModule.base', 'save'), ['class' => 'btn btn-primary']); ?>
 			<?php echo \humhub\widgets\DataSaved::widget(); ?>
 		<?php ActiveForm::end(); ?>
