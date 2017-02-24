@@ -1,6 +1,9 @@
 <?php
+
+use Yii;
 use yii\helpers\Url;
 use humhub\models\Setting;
+
 ?>
 <div class="panel">
   <div class="panel-heading">
@@ -14,3 +17,26 @@ use humhub\models\Setting;
     
 </div>
 </div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#privacyboxModal').modal({
+            backdrop: 'static',
+            keyboard: false,
+            show: true
+        });
+
+    });
+
+    $('#privacybox-accept').on('click', function() {
+        $.ajax({
+            url: '<?php echo Url::to(['/discord/index/accept']) ?>',
+            success: function() {
+                $('#privacyboxModal').modal('hide');
+            }
+        });
+    });
+
+</script>
