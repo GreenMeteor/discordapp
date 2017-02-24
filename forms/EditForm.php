@@ -1,9 +1,10 @@
 <?php
+
 namespace humhub\modules\discordapp\forms;
 
 use Yii;
 
-class SettingsForm extends \yii\base\Model
+class EditForm extends \yii\base\Model
 {
 
     public $sort;
@@ -14,20 +15,20 @@ class SettingsForm extends \yii\base\Model
             [
                 [
 
-                    'sort'
+                    'discord-id'
                 ],
                 'safe'
             ],
             [
                 [
 
-                    'sort'
+                    'discord-id'
                 ],
                 'required'
             ],
             [
                 [
-                    'sort'
+                    'discord-id'
                 ],
                 'integer',
                 'min' => 0,
@@ -39,7 +40,7 @@ class SettingsForm extends \yii\base\Model
     public function attributeLabels()
     {
         return [
-            'sort' => Yii::t('DiscordappModule.base', 'sort')
+            'sort' => Yii::t('DiscordappModule.base', 'Discord ID')
         ];
     }
 }
