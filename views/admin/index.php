@@ -19,7 +19,7 @@ use humhub\modules\discordapp\controllers\AdminController;
 				<?php echo $form->textField($model, 'number', ['class' => 'form-control', 'readonly' => Setting::IsFixed('number', 'discordapp')]); ?>
 			</div>
 		        <?php echo Html::submitButton(Yii::t('DiscordappModule.views_admin_index', 'save'), ['class' => 'btn btn-primary', 'data-ui-loader' => '']); ?>
-			<a class="btn btn-default" href="<?php echo Url::to(['discord/admin/module']); ?>"><?php echo Yii::t('DiscordappModule.views_admin_index', 'Back to modules'); ?></a>
+			<a class="btn btn-default" href="<?php echo Url::to(['/discord/admin/module']); ?>"><?php echo Yii::t('DiscordappModule.views_admin_index', 'Back to modules'); ?></a>
 		        <?php echo \humhub\widgets\DataSaved::widget(); ?>
 		
 		<?php ActiveForm::end(); ?>
