@@ -4,5 +4,5 @@
 		'Discord Settings' => '',
 		'Discord Widget URL:' => '',
 		'<strong>Discord</strong> module configuration' => '',
-		'save' => '',
+		'Save' => '',
 	];
