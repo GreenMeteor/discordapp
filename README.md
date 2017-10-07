@@ -1,4 +1,4 @@
-![](resources/discordlogo.png)
+[![](resources/discordlogo.png)](https://discordapp.com/)
 
 ## [HumHub](https://www.humhub.org/en) Discord Module
 
