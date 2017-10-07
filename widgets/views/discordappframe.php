@@ -14,7 +14,7 @@ use humhub\models\Setting;
   <div class="panel-body">
 
 <?= Html::beginTag('div', $options) ?>
-<iframe src="<?= $discordappUrl; ?>" id="discordAPPFrame" width="350" height="500" allowtransparency="true" frameborder="0" name="iframeContainer"></iframe>
+<iframe src="<?= $discordappUrl; ?>" id="discordAPPFrame" width="100%" height="500" allowtransparency="true" frameborder="0" name="iframeContainer"></iframe>
 <?= Html::endTag('div'); ?>
 </div>
 </div>
