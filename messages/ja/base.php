@@ -4,5 +4,5 @@
 		'Discord Settings' => 'Discord 設定',
 		'Discord Widget URL:' => 'Discord ウィジェットURL：',
 		'<strong>Discord</strong> module configuration' => '<strong>Discord</strong> モジュール構成',
-		'save' => 'セーブ',
+		'Save' => 'セーブ',
 	];
