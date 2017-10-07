@@ -6,7 +6,7 @@ use yii\helpers\Html;
 
 <div class="panel panel-default">
 
-    <div class="panel-heading"><?= Yii::t('DiscordappModule.base', '<strong>Discordapp</strong> module configuration'); ?></div>
+    <div class="panel-heading"><?= Yii::t('DiscordappModule.base', '<strong>Discord</strong> module configuration'); ?></div>
 
     <div class="panel-body">
 
