@@ -14,3 +14,4 @@
 - Spanish ([@cavp28](https://github.com/cavp28))
 - German ([@Felli](https://github.com/felli))
 - Portuguese ([@caiqueff](https://github.com/caiqueff))
+- Russian ([@buslov](https://github.com/buslov))
