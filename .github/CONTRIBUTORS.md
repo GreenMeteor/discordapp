@@ -1,6 +1,8 @@
 # Contrubutors
 
 ### Core Code
+[@GreenMeteor](https://github.com/GreenMeteor)
+
 [@Felli](https://github.com/felli)
 
 [@WebCrew](https://github.com/webcrew)
@@ -15,3 +17,5 @@
 - German ([@Felli](https://github.com/felli))
 - Portuguese ([@caiqueff](https://github.com/caiqueff))
 - Russian ([@buslov](https://github.com/buslov))
+- Korean ([@Felli](https://github.com/felli))
+- French ([@Felli](https://github.com/felli))
