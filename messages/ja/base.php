@@ -1,8 +1,8 @@
 <?php
-	return [
-		'<strong>Discord</strong> Chat' => '<strong>Discord</strong> チャット',
-		'Discord Settings' => 'Discord 設定',
-		'Discord Widget URL:' => 'Discord ウィジェットURL：',
-		'<strong>Discord</strong> module configuration' => '<strong>Discord</strong> モジュール構成',
-		'Save' => 'セーブ',
-	];
+    return [
+        '<strong>Discord</strong> Chat' => '<strong>Discord</strong> チャット',
+        'Discord Settings' => 'Discord 設定',
+        'Discord Widget URL:' => 'Discord ウィジェットURL：',
+        '<strong>Discord</strong> module configuration' => '<strong>Discord</strong> モジュール構成',
+        'Save' => 'セーブ',
+    ];
