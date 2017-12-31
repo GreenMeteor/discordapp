@@ -2,6 +2,8 @@
 
 ## [HumHub](https://www.humhub.org/en) Discord Module
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GreenMeteor/humhub-discordapp-module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GreenMeteor/humhub-discordapp-module/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/GreenMeteor/humhub-discordapp-module/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GreenMeteor/humhub-discordapp-module/build-status/master)
+
 Adds a sidebar widget to the Dashboard.
 
 ## Installing & Setup
