@@ -7,7 +7,8 @@ use humhub\models\Setting;
 \humhub\modules\discordapp\Assets::register($this);
 ?>
 
-<div class="panel">
+<div class="panel panel-default panel-discordapp" id="panel-discordapp">
+    <?= \humhub\widgets\PanelMenu::widget(['id' => 'panel-discordapp']); ?>
   <div class="panel-heading">
     <?=Yii::t('DiscordappModule.base', '<strong>Discord</strong> Chat'); ?>
   </div>
