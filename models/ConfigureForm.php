@@ -6,7 +6,6 @@ use Yii;
 
 /**
  * ConfigureForm defines the configurable fields.
-
  */
 class ConfigureForm extends \yii\base\Model
 {
