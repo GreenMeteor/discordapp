@@ -12,7 +12,7 @@ return [
             'event' => \humhub\modules\dashboard\widgets\Sidebar::EVENT_INIT,
             'callback' => [
                 'humhub\modules\discordapp\Events',
-                'adddiscordappFrame'
+                'addDiscordappFrame'
             ]
         ],
         [
@@ -20,7 +20,7 @@ return [
             'event' => \humhub\modules\space\widgets\Sidebar::EVENT_INIT,
             'callback' => [
                 'humhub\modules\discordapp\Events',
-                'adddiscordappFrame'
+                'addDiscordappFrame'
             ]
         ],
         [

@@ -1,4 +1,5 @@
 <?php
+
 namespace humhub\modules\discordapp;
 
 use Yii;
@@ -15,7 +16,7 @@ class Events extends \yii\base\Object
             'label' => Yii::t('DiscordappModule.base', 'Discord Settings'),
             'url' => Url::toRoute('/discordapp/admin/index'),
             'group' => 'settings',
-            'icon' => '<i class="fa fa-discord"></i>',
+            'icon' => '<i class="fab fa-discord"></i>',
             'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'discordapp' && Yii::$app->controller->id == 'admin',
             'sortOrder' => 650
         ]);
