@@ -1,5 +1,4 @@
 <?php
-
     return [
         '<strong>Discord</strong> Chat' => '<strong>Discord</strong> 채팅',
         'Discord Settings' => 'Discord 설정을',
