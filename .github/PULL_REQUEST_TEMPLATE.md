@@ -1,6 +1,16 @@
-# Pull Request Form
-### How will this pull helps with the project?
+# How-to P/R (Pull Request)
 
-### In the long run how will this affect the project?
+| Q | A |
+| ------------- |:-------------:|
+| How useful will this `P/R` be? | ✓/X |
+| Does this `P/R` follow HumHub & Yii2 CoC? | ✓/X |
+| Does this `P/R` fix an [issue](https://github.com/GreenMeteor/humhub-chatwee-module/issues), if so which one? | ✓/X |
 
-### Does this comply with the Yii Framework, HumHub, & our own Code of Conduct?
+### More Information
+```
+Anymore information provide here
+```
+
+* * *
+
+> Note: Please check our [issues](https://github.com/GreenMeteor/humhub-chatwee-module/issues) before hand to see if your `P/R` helps fix any of the known issues!
