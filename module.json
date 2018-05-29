@@ -2,10 +2,10 @@
     "id": "discordapp",
     "name": "Discord App",
     "description": "Adds discordapp channel(s) to HumHub`s sidebar.",
-    "keywords": ["discordapp","discordapp"],
-    "version": "1.2.3",
+    "keywords": ["discordapp"],
+    "version": "1.2.4",
     "humhub": {
-    "minVersion": "1.0"
+    "minVersion": "1.2"
     },
     "screenshots": ["assets/Screenshot_1.png", "assets/Screenshot_2.png", "assets/Screenshot_3.png", "assets/Screenshot_4.png"]
 }
