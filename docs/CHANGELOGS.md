@@ -1,6 +1,6 @@
 # Changelogs
 
-### Discord App Module v1.2.6 [Stable] (TBA)
+### Discord App Module v1.2.6 [Stable] (Aug 30, 2018)
 - Chg: className() to class
 - Chg: Class cleaning
 - Chg: Moved images to resources
