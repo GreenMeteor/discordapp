@@ -3,9 +3,9 @@
     "name": "Discord App",
     "description": "Adds discordapp channel(s) to HumHub`s sidebar.",
     "keywords": ["discordapp"],
-    "version": "1.2.5",
+    "version": "1.2.6",
     "humhub": {
     "minVersion": "1.3"
     },
-    "screenshots": ["assets/Screenshot_1.png", "assets/Screenshot_2.png", "assets/Screenshot_3.png", "assets/Screenshot_4.png"]
+    "screenshots": ["resources/Screenshot_1.png", "resources/Screenshot_2.png", "resources/Screenshot_3.png", "resources/Screenshot_4.png"]
 }
