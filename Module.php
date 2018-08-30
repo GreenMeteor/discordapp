@@ -4,8 +4,9 @@ namespace humhub\modules\discordapp;
 
 use Yii;
 use yii\helpers\Url;
+use humhub\components\Module;
 
-class Module extends \humhub\components\Module
+class Module extends Module
 {
 
     /**
