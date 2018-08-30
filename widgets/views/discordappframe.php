@@ -1,11 +1,9 @@
 <?php
 
-use yii\helpers\Url;
 use humhub\libs\Html;
-use humhub\models\Setting;
 use humhub\widgets\PanelMenu;
 
-\humhub\modules\discordapp\assets\Assets::register($this);
+\humhub\modules\discordapp\Assets::register($this);
 ?>
 
 <div class="panel panel-default panel-discordapp" id="panel-discordapp">

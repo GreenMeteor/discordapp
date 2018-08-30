@@ -3,9 +3,7 @@
 namespace humhub\modules\discordapp\widgets;
 
 use Yii;
-use yii\helpers\Url;
-use humhub\libs\Html;
-use humhub\components\Widget;
+use yii\base\Widget;
 
 /**
  *
