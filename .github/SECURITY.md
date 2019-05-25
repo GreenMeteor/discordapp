@@ -2,20 +2,23 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following versions of HumHub are supported by this module.
 
-| Version | Supported          |
+| HumHub Version | Supported |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| v1.2.8 | :white_check_mark: |
+| < v1.2.0-beta.4 | :x: |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+To report any issues/vulnerability with this module please use `Bug:` then name the issue/vulnerability and explain within the description, if you have questions tag with `Q:` then your question and add a description of your question.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Make a Issue or email us at realgreenmeteor@gmail.com, you can also use our [community page](http://community.greenmeteor.pcriot.com/dashboard), you should also give us as much information as possible so that we can work on fixing the issue/vulnerability.
+
+| Contact Type | Expected Time |
+| ------- | ------------------ |
+| Issue | Within 1 business day |
+| Email | Within 5 business day |
+| Community Page | Within 1 business day |
+
+> Please note that if any issues/vulnerabilities are denied doesn't mean that we aren't going to be working on fixing this issue, just means that refactoring is needed done and know that we'll always push high quality modules for HumHub.
