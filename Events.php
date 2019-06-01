@@ -11,7 +11,7 @@ use humhub\models\Setting;
 class Events extends BaseObject
 {
 
-    public static function onAdminMenuInit(\yii\base\Event $event)
+    public static function onAdminMenuInit($event)
     {
         $event->sender->addItem([
             'label' => Yii::t('DiscordappModule.base', 'Discord Settings'),
@@ -23,7 +23,7 @@ class Events extends BaseObject
         ]);
     }
 
-public static function addDiscordappFrame($event)
+    public static function addDiscordappFrame($event)
     {
         if (Yii::$app->user->isGuest) {
             return;
