@@ -30,6 +30,14 @@ return [
                 'humhub\modules\discordapp\Events',
                 'onAdminMenuInit'
             ]
+        ],
+        [
+            'class' => \humhub\modules\space\widgets\HeaderControlsMenu::class,
+            'event' => \humhub\widgets\BaseMenu::EVENT_INIT,
+            'callback' => [
+                'humhub\modules\discordapp\Events',
+                'onSpaceAdminMenuInit'
+            ]
         ]
     ]
 ];
