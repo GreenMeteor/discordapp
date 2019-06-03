@@ -23,6 +23,25 @@ class Events extends BaseObject
         ]);
     }
 
+    public static function onSpaceAdminMenuInit($event)
+    {
+        $space = $event->sender->space;
+        
+        $isSpaceAdmin = version_compare(Yii::$app->version, '1.2.6', 'lt') ? 
+                $space->getUserGroup() === \humhub\modules\space\models\Space::USERGROUP_ADMIN || $space->getUserGroup() === \humhub\modules\space\models\Space::USERGROUP_OWNER
+                : $space->isAdmin(Yii::$app->user->id);
+        if ($isSpaceAdmin) {
+            $event->sender->addItem([
+                'label' => Yii::t('DiscordappModule.base', 'Discord Settings'),
+                'url' => $space->createUrl('/discordapp/space-admin/index'),
+                'group' => 'admin',
+                'icon' => '<i class="fab fa-discord"></i>',
+                'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'discordapp' && Yii::$app->controller->id == 'space-admin'),
+                'sortOrder' => 510,
+            ]);
+        }
+    }
+
     public static function addDiscordappFrame($event)
     {
         if (Yii::$app->user->isGuest) {
