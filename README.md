@@ -14,5 +14,7 @@ Adds the offical Discord widget to your HumHub instance sidebar on the Dashboard
 
 ### To-Does
 - [ ] Make Space settings
+- [ ] Add option to display Discord server banner(s).
+
 ------
 > Note: Notice: contributions can be found [here](https://github.com/GreenMeteor/humhub-discordapp-module/blob/master/.github/CONTRIBUTORS.md).
