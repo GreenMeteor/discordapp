@@ -1,5 +1,9 @@
 # Changelogs
 
+### Discord App Module v1.2.7 (TBA)
+- Chg: Remove/Add needed changes
+- Enh: Restructured
+
 ### Discord App Module v1.2.6 [Stable] (Aug 30, 2018)
 - Chg: className() to class
 - Chg: Class cleaning
