@@ -12,6 +12,7 @@ class ConfigureForm extends Model
 {
 
     public $serverUrl;
+    public $sUrl;
 
     /**
      * @inheritdoc
@@ -19,7 +20,7 @@ class ConfigureForm extends Model
     public function rules()
     {
         return [
-            ['serverUrl', 'string'],
+            ['serverUrl', 'sUrl', 'string'],
         ];
     }
 
@@ -30,6 +31,7 @@ class ConfigureForm extends Model
     {
         return [
             'serverUrl' => Yii::t('DiscordappModule.base', 'Discord Widget URL:'),
+            'sUrl' => Yii::t('DiscordspaceModule.base', 'Discord Widget URL:'),
         ];
     }
 
@@ -40,6 +42,7 @@ class ConfigureForm extends Model
     {
         return [
             'serverUrl' => Yii::t('DiscordappModule.base', 'e.g. https://discordapp.com/widget?id={server-id} or https://discordapp.com/widget?id={server-id}&theme=dark'),
+            'sUrl' => Yii::t('DiscordappModule.base', 'e.g. https://discordapp.com/widget?id={server-id} or https://discordapp.com/widget?id={server-id}&theme=dark'),
         ];
     }
 
@@ -47,12 +50,16 @@ class ConfigureForm extends Model
     {
         $this->serverUrl = Yii::$app->getModule('discordapp')->settings->get('serverUrl');
 
+        $this->sUrl = Yii::$app->getModule('discordspace')->settings->get('sUrl');
+
         return true;
     }
 
     public function save()
     {
         Yii::$app->getModule('discordapp')->settings->set('serverUrl', $this->serverUrl);
+
+        Yii::$app->getModule('discordspace')->settings->set('sUrl', $this->sUrl);
 
         return true;
     }
