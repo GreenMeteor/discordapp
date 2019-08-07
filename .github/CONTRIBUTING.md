@@ -1,5 +1,5 @@
 # Contributing
-This project is free to use and edit as long as the user of this project keeps to the [LICENSE](https://github.com/GreenVolume/humhub-discordapp-module/blob/master/LICENSE) within the project, this Module is meant for the Social Networking Kit known as [HumHub](https://github.com/humhub/humhub) and any issues with the platform itself should be reported on it's public repository not here!
+This project is free to use and edit as long as the user of this project keeps to the [LICENSE](https://github.com/GreenMeteor/humhub-discordapp-module/blob/master/LICENSE) within the project, this Module is meant for the Social Networking Kit known as [HumHub](https://github.com/humhub/humhub) and any issues with the platform itself should be reported on it's public repository not here!
 
 
 ### Pulls/Issues

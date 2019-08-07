@@ -1,5 +1,4 @@
 <?php
-
     return [
         '<strong>Discord</strong> Chat' => '<strong>Discord</strong> Chat',
         'Discord Settings' => 'Discord Paramètres',

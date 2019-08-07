@@ -1,16 +1,15 @@
 <?php
 
-use yii\helpers\Url;
 use humhub\libs\Html;
-use humhub\models\Setting;
+use humhub\widgets\PanelMenu;
 
 \humhub\modules\discordapp\Assets::register($this);
 ?>
 
 <div class="panel panel-default panel-discordapp" id="panel-discordapp">
-    <?= \humhub\widgets\PanelMenu::widget(['id' => 'panel-discordapp']); ?>
+    <?= PanelMenu::widget(['id' => 'panel-discordapp']); ?>
   <div class="panel-heading">
-    <?=Yii::t('DiscordappModule.base', '<strong>Discord</strong> Chat'); ?>
+    <?= Yii::t('DiscordappModule.base', '<strong>Discord</strong> Chat'); ?>
   </div>
   <div class="panel-body">
 

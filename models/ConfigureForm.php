@@ -3,11 +3,12 @@
 namespace humhub\modules\discordapp\models;
 
 use Yii;
+use yii\base\Model;
 
 /**
  * ConfigureForm defines the configurable fields.
  */
-class ConfigureForm extends \yii\base\Model
+class ConfigureForm extends Model
 {
 
     public $serverUrl;
