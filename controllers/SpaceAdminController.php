@@ -5,7 +5,7 @@ namespace humhub\modules\discordapp\controllers;
 
 use Yii;
 use humhub\modules\space\controllers\SpaceController;
-use humhub\modules\discordspace\models\ConfigureForm;
+use humhub\modules\discordapp\models\ConfigureForm;
 
 class SpaceAdminController extends SpaceController
 {
