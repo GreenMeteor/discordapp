@@ -9,6 +9,6 @@ curl -s -L -o chromedriver_linux64.zip https://chromedriver.storage.googleapis.c
 	&& chmod +x $HOME/chromedriver
 
 # Install composer package
-if [ ${HUMHUB_VERSION} = "v1.3.14" ]; then
+if [ ${HUMHUB_VERSION} = "v1.3" ]; then
     composer global require fxp/composer-asset-plugin
 fi
