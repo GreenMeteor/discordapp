@@ -13,7 +13,7 @@ composer install --prefer-dist --no-interaction
 
 npm install
 
-if [ "${HUMHUB_VERSION}" != 'v1.2.5' ] ; then
+if [ "${HUMHUB_VERSION}" != 'v1.3.14' ] ; then
   grunt build-assets
 fi
 
