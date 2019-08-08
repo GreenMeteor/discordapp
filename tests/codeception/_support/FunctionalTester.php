@@ -21,7 +21,7 @@ class FunctionalTester extends \FunctionalTester
 {
     use _generated\FunctionalTesterActions;
     
-   /**
-    * Define custom actions here
-    */
+    /**
+     * Define custom actions here
+     */
 }
