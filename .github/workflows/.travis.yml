@@ -21,12 +21,12 @@ sudo: enabled
     - HUMHUB_PATH=/opt/humhub	
   matrix:	
     - HUMHUB_VERSION=master	
-    - HUMHUB_VERSION=v1.3.14	
+    - HUMHUB_VERSION=v1.3.15
 
  matrix:	
   exclude:	
     - php: '7.2'	
-      env: HUMHUB_VERSION=v1.3.14	
+      env: HUMHUB_VERSION=v1.3.15
   fast_finish: true	
 
  cache:	
@@ -34,8 +34,8 @@ sudo: enabled
     - $HOME/.composer/cache	
 
  install:	
-  - .travis/install-dependencies.sh	
-  - .travis/setup-humhub.sh	
+  - //github.com/humhub/humhub/.travis/install-dependencies.sh	
+  - //github.com/humhub/humhub/.travis/setup-humhub.sh	
 
  before_script:	
   - $HOME/chromedriver --url-base=/wd/hub &	
