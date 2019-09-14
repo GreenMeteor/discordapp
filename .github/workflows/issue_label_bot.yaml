@@ -1,0 +1,2 @@
+- name: Label approved pull requests
+  uses: pullreminders/label-when-approved-action@v1.0.3
