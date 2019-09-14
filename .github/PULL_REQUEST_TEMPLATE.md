@@ -8,9 +8,9 @@
 
 ### More Information
 ```
-Anymore information provide here
+Any more information provide here
 ```
 
 * * *
 
-> Note: Please check our [issues](https://github.com/GreenMeteor/humhub-discordapp-module/issues) before hand to see if your `P/R` helps fix any of the known issues!
+> Note: Please check our [issues](https://github.com/GreenMeteor/humhub-discordapp-module/issues) beforehand to see if your `P/R` helps fix any of the known issues!
