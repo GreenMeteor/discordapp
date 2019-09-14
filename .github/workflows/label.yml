@@ -5,7 +5,7 @@ on:
     branches:
     - master
 jobs:
-  label: Type: Needs investigation
+  label:
 
     runs-on: ${{ matrix.os }}
     strategy:
