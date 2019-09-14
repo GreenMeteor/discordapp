@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/stale@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.discordapp_module }}
         stale-issue-message: 'This issue has not seen any action (e.g comments/replies) for more than 7 days and is now being marked as invalid'
         stale-pr-message: 'This p/r has gone unnoticed for more than 7 days and will be marked as "Needs confirmed"'
         stale-issue-label: 'Type:  Invalid'
