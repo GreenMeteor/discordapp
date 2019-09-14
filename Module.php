@@ -19,6 +19,7 @@ class Module extends \humhub\components\Module
                     '/discordapp/admin'
         ]);
     }
+
     public function getServerUrl()
     {
         $url = $this->settings->get('serverUrl');
