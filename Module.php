@@ -15,9 +15,7 @@ class Module extends \humhub\components\Module
      */
     public function getConfigUrl()
     {
-        return Url::to([
-                    '/discordapp/admin'
-        ]);
+        return Url::to(['/discordapp/admin']);
     }
 
     public function getServerUrl()
