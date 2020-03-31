@@ -3,6 +3,8 @@
 ### Discord App Module v1.2.7 (TBA)
 - Chg: Remove/Add needed changes
 - Enh: Restructured
+- Enh: Updated French Translations
+- Enh: Added `in_ID` (Indonesian Language)
 
 ### Discord App Module v1.2.6 [Stable] (Aug 30, 2018)
 - Chg: className() to class
