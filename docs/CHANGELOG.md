@@ -1,6 +1,6 @@
 # Changelogs
 
-### Discord App Module v1.3.0 (TBA)
+### Discord App Module v1.3.0 (May 9, 2020)
 - Enh: Version upgraded + minVersion upgrade
 - Enh: Implemented use of `https://discordapp.com` & `https://discord.com`
 - Enh: Created MANUAL.md
