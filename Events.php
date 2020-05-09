@@ -10,7 +10,9 @@ use humhub\models\Setting;
 
 class Events extends BaseObject
 {
-
+    /**
+     * @param $event yii\base\Event
+     */
     public static function onAdminMenuInit($event)
     {
         $event->sender->addItem([
@@ -23,6 +25,9 @@ class Events extends BaseObject
         ]);
     }
 
+    /**
+     * @param $event yii\base\Event
+     */
     public static function addDiscordappFrame($event)
     {
         if (Yii::$app->user->isGuest) {
