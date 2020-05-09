@@ -2,8 +2,9 @@
 
 use humhub\libs\Html;
 use humhub\widgets\PanelMenu;
+use humhub\modules\discordapp\Assets;
 
-\humhub\modules\discordapp\Assets::register($this);
+Assets::register($this);
 ?>
 
 <div class="panel panel-default panel-discordapp" id="panel-discordapp">
@@ -14,7 +15,7 @@ use humhub\widgets\PanelMenu;
   <div class="panel-body">
 
 <?= Html::beginTag('div') ?>
-<iframe src="<?= $discordappUrl; ?>" id="discordAPPFrame" width="100%" height="500" allowtransparency="true" frameborder="0" name="iframeContainer"></iframe>
+<iframe src="<?= $discordappUrl; ?>" <?= Html::nonce() ?> id="discordAPPFrame" width="100%" height="500" allowtransparency="true" frameborder="0" name="iframeContainer"></iframe>
 <?= Html::endTag('div'); ?>
 </div>
 </div>
