@@ -1,6 +1,9 @@
 # Changelogs
 
-### Discord App Module v1.2.7 (TBA)
+### Discord App Module v1.3.0 (TBA)
+- Enh: Version upgraded + minVersion upgrade
+- Enh: Implemented use of `https://discordapp.com` & `https://discord.com`
+### Discord App Module v1.2.7 (Canceled)
 - Chg: Remove/Add needed changes
 - Enh: Restructured
 - Enh: Updated French Translations
