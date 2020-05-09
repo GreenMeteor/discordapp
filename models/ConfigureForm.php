@@ -19,7 +19,7 @@ class ConfigureForm extends Model
     public function rules()
     {
         return [
-            ['serverUrl', 'string'],
+            ['serverUrl', 'required'],
         ];
     }
 
