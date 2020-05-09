@@ -39,7 +39,7 @@ class ConfigureForm extends Model
     public function attributeHints()
     {
         return [
-            'serverUrl' => Yii::t('DiscordappModule.base', 'e.g. https://discordapp.com/widget?id={server-id} or https://discordapp.com/widget?id={server-id}&theme=dark'),
+            'serverUrl' => Yii::t('DiscordappModule.base', 'e.g. https://discordapp.com/widget?id={server-id} or https://discord.com/widget?id={server-id}'),
         ];
     }
 
