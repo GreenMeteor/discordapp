@@ -19,6 +19,11 @@ class DiscordappFrame extends Widget
     public function run()
     {
         $url = Yii::$app->getModule('discordapp')->getServerUrl() . '/widget?id=';
+
+        if (!$url) {
+            return '';
+        }
+
         return $this->render('discordappframe', ['discordappUrl' => $url]);
     }
 }
