@@ -3,6 +3,8 @@
 ### Discord App Module v1.3.0 (TBA)
 - Enh: Version upgraded + minVersion upgrade
 - Enh: Implemented use of `https://discordapp.com` & `https://discord.com`
+- Enh: Created MANUAL.md
+
 ### Discord App Module v1.2.7 (Canceled)
 - Chg: Remove/Add needed changes
 - Enh: Restructured
