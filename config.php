@@ -2,35 +2,19 @@
 
 namespace humhub\modules\discordapp;
 
+use humhub\modules\discordapp\Module;
+use humhub\modules\discordapp\Events;
+use humhub\modules\admin\widgets\AdminMenu;
+use humhub\modules\space\widgets\Sidebar as Space;
+use humhub\modules\dashboard\widgets\Sidebar as Dashboard;
 return [
     'id' => 'discordapp',
-    'class' => 'humhub\modules\discordapp\Module',
+    'class' => Module::class,
     'namespace' => 'humhub\modules\discordapp',
     'events' => [
-        [
-            'class' => \humhub\modules\dashboard\widgets\Sidebar::class,
-            'event' => \humhub\modules\dashboard\widgets\Sidebar::EVENT_INIT,
-            'callback' => [
-                'humhub\modules\discordapp\Events',
-                'addDiscordappFrame'
-            ]
-        ],
-        [
-            'class' => \humhub\modules\space\widgets\Sidebar::class,
-            'event' => \humhub\modules\space\widgets\Sidebar::EVENT_INIT,
-            'callback' => [
-                'humhub\modules\discordapp\Events',
-                'addDiscordappFrame'
-            ]
-        ],
-        [
-            'class' => \humhub\modules\admin\widgets\AdminMenu::class,
-            'event' => \humhub\modules\admin\widgets\AdminMenu::EVENT_INIT,
-            'callback' => [
-                'humhub\modules\discordapp\Events',
-                'onAdminMenuInit'
-            ]
-        ]
+        ['class' => Dashboard::class, 'event' => Dashboard::EVENT_INIT, 'callback' => [Events::class, 'addDiscordappFrame']],
+        ['class' => Space::class, 'event' => Space::EVENT_INIT, 'callback' => [Events::class, 'addDiscordappFrame']],
+        ['class' => AdminMenu::class, 'event' => AdminMenu::EVENT_INIT, 'callback' => [Events::class, 'onAdminMenuInit']]
     ]
 ];
 ?>
