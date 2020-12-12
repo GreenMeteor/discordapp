@@ -5,7 +5,9 @@ namespace humhub\modules\discordapp;
 use Yii;
 use yii\helpers\Url;
 use yii\base\BaseObject;
-use humhub\models\Setting;
+use humhub\modules\ui\menu\MenuLink;
+use humhub\modules\admin\widgets\AdminMenu;
+use humhub\modules\admin\permissions\ManageModules;
 
 class Events extends BaseObject
 {
@@ -14,14 +16,20 @@ class Events extends BaseObject
      */
     public static function onAdminMenuInit($event)
     {
-        $event->sender->addItem([
+        if (!Yii::$app->user->can(ManageModules::class)) {
+            return;
+        }
+
+        /** @var AdminMenu $menu */
+        $menu = $event->sender;
+
+        $menu->addEntry(new MenuLink([
             'label' => Yii::t('DiscordappModule.base', 'Discord Settings'),
             'url' => Url::toRoute('/discordapp/admin/index'),
-            'group' => 'settings',
             'icon' => '<i class="fab fa-discord"></i>',
             'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'discordapp' && Yii::$app->controller->id == 'admin',
             'sortOrder' => 650
-        ]);
+        ]));
     }
 
     /**
@@ -33,8 +41,6 @@ class Events extends BaseObject
             return;
         }
 
-        $event->sender->addWidget(widgets\DiscordappFrame::class, [], [
-            'sortOrder' => Setting::Get('timeout', 'discordapp')
-        ]);
+        $event->sender->addWidget(widgets\DiscordappFrame::class, [], ['sortOrder' => 600]);
     }
 }
