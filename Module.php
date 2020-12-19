@@ -28,4 +28,12 @@ class Module extends BaseModule
         return $url;
     }
 
+    public function getOrder()
+    {
+        $sortOrder = $this->settings->get('sortOrder');
+        if (empty($sortOrder)) {
+            return '100';
+        }
+        return $sortOrder;
+    }
 }
