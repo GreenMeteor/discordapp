@@ -28,7 +28,8 @@ class Events extends BaseObject
             'url' => Url::toRoute('/discordapp/admin/index'),
             'icon' => '<i class="fab fa-discord"></i>',
             'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'discordapp' && Yii::$app->controller->id == 'admin',
-            'sortOrder' => 650
+            'sortOrder' => 650,
+            'isVisible' => true,
         ]));
     }
 
@@ -41,6 +42,6 @@ class Events extends BaseObject
             return;
         }
 
-        $event->sender->addWidget(widgets\DiscordappFrame::class, [], ['sortOrder' => 600]);
+        $event->sender->addWidget(widgets\DiscordappFrame::class, [], ['sortOrder' => Yii::$app->getModule('discordapp')->settings->get('sortOrder')]);
     }
 }
