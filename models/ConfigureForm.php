@@ -14,12 +14,18 @@ class ConfigureForm extends Model
     public $serverUrl;
 
     /**
+     * Sort the order of the widget
+     */
+    public $sortOrder;
+
+    /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
             ['serverUrl', 'required'],
+            ['sortOrder', 'string'],
         ];
     }
 
@@ -47,12 +53,16 @@ class ConfigureForm extends Model
     {
         $this->serverUrl = Yii::$app->getModule('discordapp')->settings->get('serverUrl');
 
+        $this->sortOrder = Yii::$app->getModule('discordapp')->settings->get('sortOrder');
+
         return true;
     }
 
     public function save()
     {
         Yii::$app->getModule('discordapp')->settings->set('serverUrl', $this->serverUrl);
+
+        Yii::$app->getModule('discordapp')->settings->set('sortOrder', $this->sortOrder);
 
         return true;
     }
